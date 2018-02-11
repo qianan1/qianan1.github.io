@@ -22,10 +22,6 @@ window.onload = function() {
 };
 
 window.onscroll = function() {
-	console.log(document.documentElement.scrollTop || document.body.scrollTop);
-	console.log(document.documentElement.offsetHeight || document.body.offsetHeight);
-	console.log(content[0].offsetTop);
-	console.log(content[0].offsetHeight);
     imageAdd();
 };
 /*初始化布局
@@ -36,7 +32,7 @@ window.onscroll = function() {
  */
 
 function imageAdd() {
-    if ((document.documentElement.scrollTop || document.body.scrollTop) + (document.documentElement.offsetHeight || document.body.offsetHeight) >= content[0].offsetTop-content[0].offsetHeight) {
+    if ((document.documentElement.scrollTop || document.body.scrollTop) + (document.documentElement.offsetHeight || document.body.offsetHeight) >= content[0].offsetTop-content[0].offsetHeight-1500) {
         for (var j = 0; j < 5; j++) {
             for (var i = 0, l = resource.data.length; i < l; i++) {
                 var box = document.createElement('div');
