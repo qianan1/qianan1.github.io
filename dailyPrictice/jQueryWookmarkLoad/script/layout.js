@@ -16,7 +16,7 @@ var resource = {
     ]
 };
 
-window.onload = function() {
+window.onready = function() {
     init();
     imageAdd();
 };
