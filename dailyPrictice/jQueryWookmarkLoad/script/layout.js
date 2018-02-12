@@ -16,10 +16,9 @@ var resource = {
     ]
 };
 
-window.onready = function() {
-    init();
-    imageAdd();
-};
+
+init();
+imageAdd();
 
 window.onscroll = function() {
     imageAdd();
