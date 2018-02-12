@@ -1,5 +1,7 @@
 var cparent = document.getElementsByClassName('container')[0];
 var content = [];
+var all = [];
+var cols;
 var screenMark = document.documentElement || document.body;
 var resource = {
     "data": [
@@ -17,7 +19,7 @@ var resource = {
 };
 
     init();
-document.ready = function() {
+window.onload = function() {
     for (var i = 0, l = all.length; i < l; i++) {
         if (i < cols)
             content.push(all[i]);
@@ -57,8 +59,8 @@ function imageAdd() {
 }
 
 function init() {
-    var all = document.getElementsByClassName('box');
-    var cols = Math.floor(screenMark.clientWidth / all[0].offsetWidth);
+    all = document.getElementsByClassName('box');
+    cols = Math.floor(screenMark.clientWidth / all[0].offsetWidth);
     cparent.style.width = cols * all[0].offsetWidth + 'px';
 }
 
