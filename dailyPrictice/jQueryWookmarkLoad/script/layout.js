@@ -16,9 +16,16 @@ var resource = {
     ]
 };
 
-
-init();
-imageAdd();
+    init();
+document.ready = function() {
+    for (var i = 0, l = all.length; i < l; i++) {
+        if (i < cols)
+            content.push(all[i]);
+        else
+            putLastImage(all[i]);
+    }
+    imageAdd();
+};
 
 window.onscroll = function() {
     imageAdd();
@@ -53,12 +60,6 @@ function init() {
     var all = document.getElementsByClassName('box');
     var cols = Math.floor(screenMark.clientWidth / all[0].offsetWidth);
     cparent.style.width = cols * all[0].offsetWidth + 'px';
-    for (var i = 0, l = all.length; i < l; i++) {
-        if (i < cols)
-            content.push(all[i]);
-        else
-            putLastImage(all[i]);
-    }
 }
 
 /*
