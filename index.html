@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn">
+
 <head>
-	<meta charset="utf-8">
-	<title>test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Guo chong's personal homepage">
+    <meta name="author" content="郭冲">
+    <title>我的个人网页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-	<P>hello world!!</P>
+    <!--页头开始 导航栏-->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 hidden-xs">
+                    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+                </div>
+                <div class="col-sm-7 pull-right col-xs-12">
+                    <ul class="nav">
+                        <li><a class="active" href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="WORK.html">WORK</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页头结束-->
+    <div class="">
+        <div class="page-header">
+            <h1 class="text-center">WHO AM I</h1>
+        </div>
+        <h4 class="text-center">甘肃平凉人士\就读于北京科技大学\17级学生\一个刚刚迈入大学生活的学生党</h4>
+        <div class="showcase">
+            <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="active item"><a href="work.html"><img src="images/showcase01.jpg" alt=""></a></div>
+                    <div class="item"><a href="work.html"><img src="images/showcase02.jpg" alt=""></a></div>
+                    <div class="item"><a href="work.html"><img src="images/showcase03.jpg" alt=""></a></div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>
+        </div>
+    </div>
+    <!--页脚开始-->
+    <div class="footer">
+        <div class="container">
+            <div class="pull-left">Copyright © 2018 by @郭冲 All rights reserved. </div>
+        </div>
+    </div>
+    <!--页脚结束-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.onresize=function(){
+            if(window.innerWidth<=356){
+                $('*').hide();
+            }else{
+                $('*').show();
+            }
+        };
+    </script>
 </body>
+
 </html>

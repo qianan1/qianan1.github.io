@@ -1,0 +1,120 @@
+body {
+    background-color: #49c9b0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.img-width-50 {
+    width: 50%;
+}
+
+.about,.contact {
+    background-color: #fff;
+    color: #a09d9d;
+}
+
+.about h1,.contact .flag, .contact label {
+    color: #49c9b0;
+}
+
+.about p,.contact p {
+    color: #999;
+    line-height: 2em;
+}
+
+.contact .btn{
+    background-color: #49c9b0;
+    color: #fff;
+}
+
+.header {
+    background-color: #2b3e4f;
+    font-size: 16px;
+}
+
+.mainbody {
+    margin: 50px auto;
+}
+
+.btn-success {
+    background-color: #49c9b0;
+    border-color: #49c9b0;
+    color: #FFFFFF;
+}
+
+.info .col-md-6,
+.info .col-md-12 {
+    margin-bottom: 20px;
+}
+
+.info span {
+    padding-left: 12px;
+}
+
+.nav li a {
+    color: #49c9b0!important;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    height: 60px;
+    line-height: 60px;
+}
+
+@media screen and (min-width: 992px){
+    .nav li a{
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .nav li a{
+        padding: 0 10px;
+    }
+}
+
+.nav li a.active {
+    border-bottom: 2px solid #ccc;
+    color: #FFF!important;
+}
+
+h1,
+h4 {
+    color: #fff;
+    font-weight: lighter;
+}
+
+h4.text-center {
+    color: #617f9b;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.showcase {
+    margin: 20px auto;
+}
+
+.footer {
+    color: #5c7b98;
+    background: url(../images/footer_bg.png) repeat-x;
+    height: 55px;
+    margin-top: 30px;
+    line-height: 55px;
+}
+
+.item img {
+    width: 100%;
+}
+
+.group1.cboxElement>img {
+    width: 100%;
+}
