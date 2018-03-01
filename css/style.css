@@ -52,6 +52,17 @@ body {
     padding-left: 12px;
 }
 
+.nav {
+    float: none;
+    text-align: center;
+}
+
+.nav li{
+    float:none;
+    display: inline-block;
+    margin: 0em;
+}
+
 .nav li a {
     color: #49c9b0!important;
 }
