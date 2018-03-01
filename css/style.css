@@ -6,6 +6,7 @@ body {
 
 .img-width-50 {
     width: 50%;
+    margin-bottom: 50px;
 }
 
 .about,.contact {
@@ -73,6 +74,12 @@ body {
 @media screen and (max-width: 992px){
     .nav li a{
         padding: 0 10px;
+    }
+
+    .top-box{
+        border-bottom: solid 1px #eee;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 }
 
