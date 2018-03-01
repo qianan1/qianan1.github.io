@@ -9,21 +9,25 @@ body {
     margin-bottom: 50px;
 }
 
-.about,.contact {
+.about,
+.contact {
     background-color: #fff;
     color: #a09d9d;
 }
 
-.about h1,.contact .flag, .contact label {
+.about h1,
+.contact .flag,
+.contact label {
     color: #49c9b0;
 }
 
-.about p,.contact p {
+.about p,
+.contact p {
     color: #999;
     line-height: 2em;
 }
 
-.contact .btn{
+.contact .btn {
     background-color: #49c9b0;
     color: #fff;
 }
@@ -57,8 +61,8 @@ body {
     text-align: center;
 }
 
-.nav li{
-    float:none;
+.nav li {
+    float: none;
     display: inline-block;
     margin: 0em;
 }
@@ -67,27 +71,23 @@ body {
     color: #49c9b0!important;
 }
 
-.nav li {
-    float: left;
-}
-
 .nav li a {
     height: 60px;
     line-height: 60px;
 }
 
-@media screen and (min-width: 992px){
-    .nav li a{
+@media screen and (min-width: 992px) {
+    .nav li a {
         padding: 0 30px;
     }
 }
 
-@media screen and (max-width: 992px){
-    .nav li a{
+@media screen and (max-width: 992px) {
+    .nav li a {
         padding: 0 10px;
     }
 
-    .top-box{
+    .top-box {
         border-bottom: solid 1px #eee;
         padding-bottom: 20px;
         margin-bottom: 20px;
